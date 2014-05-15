@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Linq.Expressions;
 using Newtonsoft.Json;
 using Nutritionix.Extensions;
@@ -115,13 +116,13 @@ namespace Nutritionix
         /// <summary>
         /// 
         /// </summary>
-        [Description("asc")]
+        [Display(Description="asc")]
         Ascending,
 
         /// <summary>
         /// 
         /// </summary>
-        [Description("desc")]
+        [Display(Description="desc")]
         Descending
     }
 }

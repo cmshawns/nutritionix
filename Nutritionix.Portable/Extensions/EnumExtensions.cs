@@ -1,5 +1,5 @@
 ﻿using System;
-using System.ComponentModel;
+using System.ComponentModel.DataAnnotations;
 using System.Reflection;
 
 namespace Nutritionix.Extensions
@@ -16,7 +16,7 @@ namespace Nutritionix.Extensions
             if (value == null)
                 return null;
 
-            var attribute = GetAttribute<DescriptionAttribute>(value);
+            var attribute = GetAttribute<DisplayAttribute>(value);
             if (attribute == null)
                 return value.ToString();
 
