@@ -27,7 +27,7 @@ namespace Nutritionix.Uris
 
         protected abstract string RelativePath { get; }
 
-        private NameValueCollection BuildQueryString()
+        private HttpValueCollection BuildQueryString()
         {
             var queryString = HttpUtility.ParseQueryString(string.Empty);
             UpdateQueryString(queryString);
@@ -40,11 +40,11 @@ namespace Nutritionix.Uris
             return queryString;
         }
 
-        private static void RemoveEmptyQueryStringParameters(NameValueCollection queryString)
+        private static void RemoveEmptyQueryStringParameters(HttpValueCollection queryString)
         {
             for(int i = queryString.Count-1; i >= 0; i--)
             {
-                string key = queryString.GetKey(i);
+                string key = queryString[i].Key;
                 string value = queryString[key];
                 if(value.IsNullOrEmpty())
                 {
@@ -53,7 +53,7 @@ namespace Nutritionix.Uris
             }
         }
 
-        protected virtual void UpdateQueryString(NameValueCollection queryString)
+        protected virtual void UpdateQueryString(HttpValueCollection queryString)
         {
             
         }

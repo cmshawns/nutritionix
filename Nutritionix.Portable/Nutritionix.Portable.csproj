@@ -11,7 +11,7 @@
     <RootNamespace>Nutritionix.Portable</RootNamespace>
     <AssemblyName>Nutritionix.Portable</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
-    <TargetFrameworkProfile>Profile104</TargetFrameworkProfile>
+    <TargetFrameworkProfile>Profile24</TargetFrameworkProfile>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{786C830F-07A1-408B-BD7F-6EE04809D6DB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
@@ -52,6 +52,9 @@
     <Compile Include="SearchResponse.cs" />
     <Compile Include="SearchResult.cs" />
     <Compile Include="SearchResultFieldCollection.cs" />
+    <Compile Include="System.Portable\HttpUtility.cs" />
+    <Compile Include="System.Portable\HttpValue.cs" />
+    <Compile Include="System.Portable\HttpValueCollection.cs" />
     <Compile Include="Uris\NutritionixUri.cs" />
     <Compile Include="Uris\PowerSearchUri.cs" />
     <Compile Include="Uris\RetrieveBrandUri.cs" />
@@ -68,6 +71,7 @@
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\packages\Newtonsoft.Json.6.0.3\lib\portable-net40+sl4+wp7+win8\Newtonsoft.Json.dll</HintPath>
     </Reference>
+    <Reference Include="System" />
     <Reference Include="System.IO">
       <HintPath>..\packages\Microsoft.Bcl.1.1.9\lib\portable-net40+sl4+win8+wp71+wpa81\System.IO.dll</HintPath>
     </Reference>
@@ -89,6 +93,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+    <None Include="System.Portable\README.md" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />

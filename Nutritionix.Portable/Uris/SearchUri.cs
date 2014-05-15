@@ -33,7 +33,7 @@ namespace Nutritionix.Uris
             get { return string.Format("search/{0}", System.Web.HttpUtility.UrlEncode(_request.Query)); }
         }
 
-        protected override void UpdateQueryString(NameValueCollection queryString)
+				protected override void UpdateQueryString(HttpValueCollection queryString)
         {
             base.UpdateQueryString(queryString);
 

@@ -22,7 +22,7 @@ namespace Nutritionix.Uris
             get { return "item"; }
         }
 
-        protected override void UpdateQueryString(NameValueCollection queryString)
+				protected override void UpdateQueryString(HttpValueCollection queryString)
         {
             base.UpdateQueryString(queryString);
 
