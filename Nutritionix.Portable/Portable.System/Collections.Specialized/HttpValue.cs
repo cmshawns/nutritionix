@@ -1,12 +1,10 @@
 ﻿/*
  * This namespace exists to provide PCL-compatible solutions that mirror the
- * Microsoft System.Web namespace - which isn't currently part of the PCL.
- * It is my hope that System.Web (or portions thereof) will be ported to PCL,
- * at which point this code can be removed from the project with no other
- * refactoring being needed.
+ * Microsoft System.Collections.Specialized namespace - which isn't currently
+ * part of the PCL.
  *				- shawn@codemastershawn.com, 5/14/2014
  */
-namespace System.Collections.Specialized
+namespace Portable.System.Collections.Specialized
 {
 	/// <summary>
 	/// 

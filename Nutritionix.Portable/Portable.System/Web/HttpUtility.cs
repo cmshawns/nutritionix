@@ -1,14 +1,13 @@
-﻿using System.Collections.Specialized;
+﻿using System;
+using Portable.System.Collections.Specialized;
+using Portable.System.Collections.Specialized;
 
 /*
  * This namespace exists to provide PCL-compatible solutions that mirror the
  * Microsoft System.Web namespace - which isn't currently part of the PCL.
- * It is my hope that System.Web (or portions thereof) will be ported to PCL,
- * at which point this code can be removed from the project with no other
- * refactoring being needed.
  *				- shawn@codemastershawn.com, 5/14/2014
  */
-namespace System.Web
+namespace Portable.System.Web
 {
 	/// <summary>
 	/// 
@@ -34,9 +33,9 @@ namespace System.Web
 			return new HttpValueCollection(query, true);
 		}
 
-		public static object[] UrlEncode(string query)
+		public static string UrlEncode(string query)
 		{
-			System.Uri.EscapeUriString()
+			return Uri.EscapeUriString(query);
 		}
 	}
 }

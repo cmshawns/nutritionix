@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
-using System.ComponentModel.DataAnnotations;
+using Portable.System.ComponentModel;
 using System.Linq.Expressions;
 using Newtonsoft.Json;
 using Nutritionix.Extensions;
@@ -179,13 +179,13 @@ namespace Nutritionix
 
     public enum ComparisonOperator
     {
-        [Display(Description="lt")]
+        [Description("lt")]
         LessThan,
-        [Display(Description="lte")]
+        [Description("lte")]
         LessThanOrEqualTo,
-        [Display(Description="gt")]
+        [Description("gt")]
         GreaterThan,
-        [Display(Description="gte")]
+        [Description("gte")]
         GreaterThanOrEqualTo
     }
 

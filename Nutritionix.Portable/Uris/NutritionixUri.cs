@@ -1,6 +1,6 @@
-using System.Collections.Specialized;
-using System.Web;
 using Nutritionix.Extensions;
+using Portable.System.Collections.Specialized;
+using Portable.System.Web;
 
 namespace Nutritionix.Uris
 {
