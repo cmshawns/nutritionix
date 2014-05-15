@@ -1,6 +1,5 @@
 ﻿using System;
 using Portable.System.Collections.Specialized;
-using Portable.System.Collections.Specialized;
 
 /*
  * This namespace exists to provide PCL-compatible solutions that mirror the
@@ -35,7 +34,7 @@ namespace Portable.System.Web
 
 		public static string UrlEncode(string query)
 		{
-			return Uri.EscapeUriString(query);
+			return Uri.EscapeDataString(query);
 		}
 	}
 }
