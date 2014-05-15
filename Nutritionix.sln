@@ -23,6 +23,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nuget", "nuget", "{67EB254F
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutritionix.Portable", "Nutritionix.Portable\Nutritionix.Portable.csproj", "{DC747F7F-4AB8-4370-B524-222432CC9448}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB047920-7C03-403C-A211-44C2FFC660CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nutritionix.Portable.Tests", "Nutritionix.Portable.Tests\Nutritionix.Portable.Tests.csproj", "{F0CE9FBF-E118-4521-9AB8-186CA6AF860A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +49,10 @@ Global
 		{DC747F7F-4AB8-4370-B524-222432CC9448}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC747F7F-4AB8-4370-B524-222432CC9448}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC747F7F-4AB8-4370-B524-222432CC9448}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0CE9FBF-E118-4521-9AB8-186CA6AF860A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0CE9FBF-E118-4521-9AB8-186CA6AF860A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0CE9FBF-E118-4521-9AB8-186CA6AF860A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0CE9FBF-E118-4521-9AB8-186CA6AF860A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
