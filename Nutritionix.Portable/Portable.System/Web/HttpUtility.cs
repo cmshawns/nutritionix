@@ -34,7 +34,7 @@ namespace Portable.System.Web
 
 		public static string UrlEncode(string query)
 		{
-			return Uri.EscapeDataString(query);
+			return String.IsNullOrEmpty(query) ? String.Empty : Uri.EscapeDataString(query);
 		}
 	}
 }

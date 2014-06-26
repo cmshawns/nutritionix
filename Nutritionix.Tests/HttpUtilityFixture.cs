@@ -1,11 +1,21 @@
 ﻿using NUnit.Framework;
 using Portable.System.Web;
 
-namespace Nutritionix.Portable.Tests
+namespace Nutritionix.Tests
 {
 	[TestFixture]
 	class HttpUtilityFixture
 	{
+		[Test]
+		public void UrlEncode_NullValue()
+		{
+			string urlpart = null;
+			string actual = HttpUtility.UrlEncode(urlpart);
+			string expected = string.Empty;
+
+			Assert.AreEqual(expected, actual);
+		}
+
 		[Test]
 		public void UrlEncode_ContainsSpaces()
 		{
