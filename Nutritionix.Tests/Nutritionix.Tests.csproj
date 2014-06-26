@@ -32,6 +32,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
     <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\Newtonsoft.Json.5.0.6\lib\net40\Newtonsoft.Json.dll</HintPath>
@@ -77,6 +78,7 @@
   <ItemGroup>
     <Compile Include="ExpressionExtensionsFixture.cs" />
     <Compile Include="FakeHttpMessageHandler.cs" />
+    <Compile Include="HttpUtilityFixture.cs" />
     <Compile Include="NutritionixClientFixture.cs" />
     <Compile Include="PowerSearchRequestFixture.cs" />
     <Compile Include="SearchFilterCollectionFixture.cs" />
@@ -91,9 +93,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Nutritionix\Nutritionix.csproj">
-      <Project>{7b38f2b3-2184-4e40-a420-7b67cc267e0a}</Project>
-      <Name>Nutritionix</Name>
+    <ProjectReference Include="..\Nutritionix.Portable\Nutritionix.Portable.csproj">
+      <Project>{DC747F7F-4AB8-4370-B524-222432CC9448}</Project>
+      <Name>Nutritionix.Portable</Name>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
