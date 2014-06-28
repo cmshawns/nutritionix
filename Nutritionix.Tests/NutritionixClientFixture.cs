@@ -1,8 +1,8 @@
 ﻿using System.Net;
 using System.Net.Http;
-using System.Web;
 using NUnit.Framework;
 using Newtonsoft.Json;
+using Portable.System.Web;
 using Rhino.Mocks;
 
 namespace Nutritionix.Tests

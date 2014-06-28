@@ -9,7 +9,7 @@ using Portable.System.Collections.Specialized;
 namespace Portable.System.Web
 {
 	/// <summary>
-	/// 
+	/// Partial implementation of System.Web.HttpUtility which is PCL compliant
 	/// </summary>
 	/// <remarks>
 	/// The code for this class was originally obtained from
